@@ -14,6 +14,7 @@
 		B32705E5219DF9A600DA0272 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B32705E3219DF9A600DA0272 /* LaunchScreen.storyboard */; };
 		B32705F0219DF9A600DA0272 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32705EF219DF9A600DA0272 /* Tip_CalculatorTests.swift */; };
 		B32705FB219DF9A600DA0272 /* Tip_CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32705FA219DF9A600DA0272 /* Tip_CalculatorUITests.swift */; };
+		B327060A21ACA9FB00DA0272 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B327060821ACA9FB00DA0272 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B32705F6219DF9A600DA0272 /* Tip CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32705FA219DF9A600DA0272 /* Tip_CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorUITests.swift; sourceTree = "<group>"; };
 		B32705FC219DF9A600DA0272 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B327060921ACA9FB00DA0272 /* Base */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Base; path = Base.lproj/SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				B32705DA219DF9A200DA0272 /* AppDelegate.swift */,
 				B32705DC219DF9A200DA0272 /* ViewController.swift */,
 				B32705DE219DF9A200DA0272 /* Main.storyboard */,
+				B327060821ACA9FB00DA0272 /* SettingsViewController.swift */,
 				B32705E1219DF9A600DA0272 /* Assets.xcassets */,
 				B32705E3219DF9A600DA0272 /* LaunchScreen.storyboard */,
 				B32705E6219DF9A600DA0272 /* Info.plist */,
@@ -258,6 +261,7 @@
 			files = (
 				B32705DD219DF9A200DA0272 /* ViewController.swift in Sources */,
 				B32705DB219DF9A200DA0272 /* AppDelegate.swift in Sources */,
+				B327060A21ACA9FB00DA0272 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +312,14 @@
 				B32705E4219DF9A600DA0272 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B327060821ACA9FB00DA0272 /* SettingsViewController.swift */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B327060921ACA9FB00DA0272 /* Base */,
+			);
+			name = SettingsViewController.swift;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

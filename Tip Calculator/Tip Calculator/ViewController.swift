@@ -23,6 +23,25 @@ class ViewController: UIViewController {
   @IBOutlet weak var peopleStepper: UIStepper!
   @IBOutlet weak var customPeopleLabel: UILabel!
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    
+    let defaults = UserDefaults.standard
+    
+    tipControl.selectedSegmentIndex = defaults.integer(forKey: "segmentIndex")
+    if (tipControl.selectedSegmentIndex == 0) {
+      tipSlider.value = 18
+    } else {
+      tipSlider.value = defaults.float(forKey: "sliderValue")
+    }
+    percentageLabel.text = String(format: "%.0f%%", (tipSlider.value.rounded()))
+    
+    
+    if (tipControl.selectedSegmentIndex != 3) {
+      tipSlider.isEnabled = false
+    }
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
@@ -36,9 +55,7 @@ class ViewController: UIViewController {
     peopleStepper.maximumValue = 20.0
     peopleStepper.minimumValue = 1.0
     
-    if (tipControl.selectedSegmentIndex != 3) {
-      tipSlider.isEnabled = false
-    }
+    
   }
 
   @IBAction func onTap(_ sender: Any) {
