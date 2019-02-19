@@ -26,10 +26,10 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 Now supporting different devices and orientation!
 
 iPhone 8 Portrait:
-<img src="https://media.giphy.com/media/LTW6WnfOQHOJRULfT2/giphy.gif" width=250><br>
+<br><img src="https://media.giphy.com/media/LTW6WnfOQHOJRULfT2/giphy.gif" width=250><br>
 
 iPhone 8 Horizontal:
-<img src="https://media.giphy.com/media/7YDcqPMCKaHsPBzeYx/giphy.gif" width=250><br>
+<br><img src="https://media.giphy.com/media/7YDcqPMCKaHsPBzeYx/giphy.gif" height=250><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
