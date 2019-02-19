@@ -18,38 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="173" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iKo-25-zAY">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="173" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iKo-25-zAY">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="173" id="9dx-de-UJc" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieCell" rowHeight="173" id="9dx-de-UJc" customClass="MovieCell" customModule="Flix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="173"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9dx-de-UJc" id="HyV-zm-whb">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" tableViewCell="9dx-de-UJc" id="HyV-zm-whb">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="172.66666666666666"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="awi-WR-Hp4">
-                                                    <rect key="frame" x="33" y="22" width="86" height="128"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="awi-WR-Hp4">
+                                                    <rect key="frame" x="20" y="22.333333333333329" width="86" height="127.99999999999999"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="5p2-GB-pRl"/>
+                                                        <constraint firstAttribute="width" constant="86" id="kiY-av-9oU"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOr-xG-mgg">
-                                                    <rect key="frame" x="127" y="22" width="267" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAQ-DB-QPC">
-                                                    <rect key="frame" x="127" y="63" width="267" height="87"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAQ-DB-QPC">
+                                                    <rect key="frame" x="114" y="59" width="280" height="91"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IOr-xG-mgg">
+                                                    <rect key="frame" x="114" y="22" width="280" height="28.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DAQ-DB-QPC" firstAttribute="leading" secondItem="awi-WR-Hp4" secondAttribute="trailing" constant="8" id="9Ha-7F-NWY"/>
+                                                <constraint firstItem="IOr-xG-mgg" firstAttribute="leading" secondItem="awi-WR-Hp4" secondAttribute="trailing" constant="8" id="GJh-pq-foR"/>
+                                                <constraint firstItem="DAQ-DB-QPC" firstAttribute="top" secondItem="IOr-xG-mgg" secondAttribute="bottom" constant="8.3300000000000001" id="Lfu-4c-hwF"/>
+                                                <constraint firstItem="DAQ-DB-QPC" firstAttribute="top" secondItem="IOr-xG-mgg" secondAttribute="bottom" constant="8.3300000000000001" id="SwH-Be-dtf"/>
+                                                <constraint firstItem="IOr-xG-mgg" firstAttribute="top" secondItem="HyV-zm-whb" secondAttribute="topMargin" constant="11" id="Ywi-rN-m1K"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IOr-xG-mgg" secondAttribute="trailing" id="dOJ-7Q-4lY"/>
+                                                <constraint firstItem="awi-WR-Hp4" firstAttribute="centerY" secondItem="HyV-zm-whb" secondAttribute="centerY" id="faC-fs-h5I"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="DAQ-DB-QPC" secondAttribute="bottom" constant="11" id="hA1-mL-6aF"/>
+                                                <constraint firstItem="awi-WR-Hp4" firstAttribute="leading" secondItem="HyV-zm-whb" secondAttribute="leadingMargin" id="nFV-ii-MsX"/>
+                                                <constraint firstItem="DAQ-DB-QPC" firstAttribute="trailing" secondItem="HyV-zm-whb" secondAttribute="trailingMargin" id="viX-8B-HFA"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <viewLayoutGuide key="safeArea" id="ttd-Rs-A2l"/>
                                         <connections>
                                             <outlet property="posterView" destination="awi-WR-Hp4" id="dhM-0l-Y6R"/>
                                             <outlet property="synopsisLabel" destination="DAQ-DB-QPC" id="Pc6-9x-U9i"/>
@@ -60,6 +73,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iKo-25-zAY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9QE-ak-mJn"/>
+                            <constraint firstAttribute="trailing" secondItem="iKo-25-zAY" secondAttribute="trailing" id="IJ5-aX-llu"/>
+                            <constraint firstItem="iKo-25-zAY" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="NT0-zP-IjL"/>
+                            <constraint firstAttribute="bottom" secondItem="iKo-25-zAY" secondAttribute="bottom" id="zjJ-r2-Jbq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="pjQ-Dd-PE3"/>
