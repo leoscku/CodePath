@@ -73,14 +73,14 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtm-FH-7i1">
-                                            <rect key="frame" x="93" y="11" width="82" height="22"/>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <rect key="frame" x="93" y="11" width="68.666666666666686" height="18"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet Content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVA-dP-Zdp">
-                                            <rect key="frame" x="93" y="41" width="112" height="68"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <rect key="frame" x="93" y="37" width="301" height="72"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -91,6 +91,7 @@
                                         <constraint firstItem="rtm-FH-7i1" firstAttribute="top" secondItem="Ghy-je-fFi" secondAttribute="topMargin" id="GgE-mM-9V4"/>
                                         <constraint firstItem="jVA-dP-Zdp" firstAttribute="top" secondItem="rtm-FH-7i1" secondAttribute="bottom" constant="8" id="Qrx-E4-CgW"/>
                                         <constraint firstItem="yPD-2I-kr9" firstAttribute="leading" secondItem="Ghy-je-fFi" secondAttribute="leadingMargin" id="RJf-BJ-7dC"/>
+                                        <constraint firstItem="jVA-dP-Zdp" firstAttribute="trailing" secondItem="Ghy-je-fFi" secondAttribute="trailingMargin" id="d6Z-ht-1OL"/>
                                         <constraint firstItem="rtm-FH-7i1" firstAttribute="leading" secondItem="yPD-2I-kr9" secondAttribute="trailing" constant="8" id="wOY-V2-9X6"/>
                                         <constraint firstItem="jVA-dP-Zdp" firstAttribute="bottom" secondItem="Ghy-je-fFi" secondAttribute="bottomMargin" id="xXN-VA-MpW"/>
                                     </constraints>
